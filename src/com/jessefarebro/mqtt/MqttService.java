@@ -244,7 +244,7 @@ public class MqttService extends Service implements MqttCallback
 			@Override
 			public void run() {
 				try {
-					mClient.connect();
+					mClient.connect(mOpts);
 					
 					mClient.subscribe("hello", 0);
 					
