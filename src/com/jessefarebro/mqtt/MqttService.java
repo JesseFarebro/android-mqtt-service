@@ -281,6 +281,7 @@ public class MqttService extends Service implements MqttCallback
 	private void stopKeepAlives() {
 		Intent i = new Intent();
 		i.setClass(this, MqttService.class);
+		i.setAction(ACTION_KEEPALIVE);
 		PendingIntent pi = PendingIntent.getService(this, 0, i , 0);
 		mAlarmManager.cancel(pi);
 	}
