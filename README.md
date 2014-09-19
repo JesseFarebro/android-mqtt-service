@@ -1,7 +1,6 @@
-Android-Paho-Mqtt-Service
+DEPRECATED
 =========================
-A simple MQTT Service that will keep running for the duration of your Android application using the Paho Java MQTT Client. 
-
+I would strongly recommend using the official [Paho Android client](http://www.eclipse.org/paho/clients/android/).
 
 Setup
 ----
