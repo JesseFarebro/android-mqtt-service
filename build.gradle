@@ -1,0 +1,15 @@
+allprojects {
+    repositories {
+        maven {
+            url 'https://repo.eclipse.org/content/repositories/paho-releases'
+        }
+    }
+}
+
+subprojects {
+    apply plugin: 'checkstyle'
+
+    checkstyle {
+        configFile = new File(rootDir, "checkstyle.xml")
+    }
+}

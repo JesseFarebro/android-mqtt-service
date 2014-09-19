@@ -1,32 +1,6 @@
-Android-Paho-Mqtt-Service
+Android Mqtt Dev Branch
 =========================
-A simple MQTT Service that will keep running for the duration of your Android application using the Paho Java MQTT Client. 
-
-
-Setup
-----
-* Make sure to add the service to your AndroidManifest.xml
-* Edit the appropriate fields in the class with the information required
-
-Simple Example
-----
-```xml
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-         android:versionCode="1"
-         android:versionName="1.0">
-
-         <receiver android:name=".MyReceiver" android:enabled="true" android:exported="false">
-             <intent-filter>
-                 <action android:name="android.intent.action.BOOT_COMPLETED" />
-             </intent-filter>
-         </receiver>
-
-         <service android:name="com.jessefarebro.mqtt.MqttService" android:exported="false" />
-
-         <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-</manifest>
-```
-
+The goal of the dev branch is to make a persistent Mqtt service that can communicate through broadcast receivers and send broadcast's when incoming messages' are received.
 
 License
 -------

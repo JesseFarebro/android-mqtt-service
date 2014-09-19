@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="50dp"
+                        android:layout_marginBottom="10dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:id="@+id/topic_text"
+                      android:text="@string/topic"
+                      android:layout_alignParentStart="true"
+                      android:layout_alignParentBottom="true" android:textSize="20dp"/>
+            <EditText android:id="@+id/topic"
+                      android:layout_toRightOf="@id/topic_text"
+                      android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="50dp"
+                android:layout_marginBottom="10dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:id="@+id/payload_text"
+                      android:text="@string/payload"
+                      android:layout_alignParentStart="true"
+                      android:layout_alignParentBottom="true" android:textSize="20dp"/>
+            <EditText android:id="@+id/payload"
+                      android:layout_toRightOf="@id/payload_text"
+                      android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="50dp"
+                android:orientation="horizontal">
+            <Button android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/connect"
+                    android:layout_weight=".3"
+                    android:text="Connect" />
+            <Button android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Publish Payload"
+                    android:id="@+id/publish"
+                    android:layout_weight=".3"/>
+            <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_weight=".3"
+                    android:id="@+id/subscribe"
+                    android:text="Subscribe"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/console"/>
+</LinearLayout>
